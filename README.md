@@ -360,21 +360,6 @@ separators: ["\n\n", "\n", "。", "！", "？", "!", "?", " ", ""]
 - **LLM_TYPE=ALIYUN**：使用 Qwen3-Max 大模型 + text-embedding-v4 嵌入
 - **LLM_TYPE=OLLAMA**：使用本地 Ollama 模型
 
-### 重排序模型
-
-下载 Qwen3-Reranker-0.6B 模型并配置 `RERANKER_MODEL_PATH` 路径，参考 [模型配置指南](./docs/modelscope_model.md)。
-
-## 故障排除
-
-详细的故障排除指南请参考：[故障排除](./docs/troubleshooting.md)
-
-常见问题：
-
-- **API Key 错误**：检查 ALIYUN_ACCESS_KEY 是否正确配置
-- **数据库连接失败**：确认 MySQL / Redis 服务已启动
-- **ChromaDB 异常**：检查 `chroma.yaml` 中的路径配置
-- **重排序模型加载失败**：确认 `RERANKER_MODEL_PATH` 指向正确的模型路径
-- **Ollama 连接失败**：确认 `ollama serve` 已运行且模型已拉取
 
 
 
